@@ -12,11 +12,16 @@ import Contact from '../Contact';
 import Footer from './Footer';
 import SlickSlider from './SliderHero';
 
+import Hamburger from '../img/hamburger.svg';
+
 import'./LandingPage.css';
 
 
 class LandingPage extends Component {
     
+  state = {
+    visible: false
+}
 
     render() {
       return (
@@ -25,8 +30,9 @@ class LandingPage extends Component {
           
           
           <Router>
-
-            <Header/>
+          <button className="buttonMenu" onClick={() => { this.setState({ visible: true }); }} ><div id="text"></div>MENU</button>
+          {this.state.visible ? <Header /> : true}
+          <img src={Hamburger} id="MenuHamburger" alt="Menu hamburger"/>
             <SlickSlider></SlickSlider>
             <Route exact path="/" component={Home}/>
             <Route path="/Movies/" component={Movies} />

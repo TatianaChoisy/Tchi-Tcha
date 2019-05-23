@@ -1,0 +1,19 @@
+.buttonMenu {
+
+cursor: pointer;
+white-space: nowrap;
+width: 200px;
+height: 70px;
+font-size: 25px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 800;
+color: #ff899f;
+outline: 0px;
+border-style: none;
+box-sizing: border-box;
+
+}
+#MenuHamburger {
+    width: 30px;
+    height: 30px;
+}
