@@ -37,6 +37,7 @@ footer {
     margin-left: 100px;
 }
 
+
 li {
     margin: 10px;
 }
@@ -52,18 +53,25 @@ h1 {
     margin-left: 30px;
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     list-style: none;
-    font-weight: 400;
+    font-weight: 800;
+}
+
+.FooterLink:hover {
+    flex-flow: row wrap;
+    margin-left: 30px;
+    color: #ff899f;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    list-style: none;
+    font-weight: 800;
 }
 
 .NewsletterLi {
     margin-left: 50px;
 }
 
-a:link {
-    text-decoration: none;
-}
 
 a:visited {
     text-decoration: none;

@@ -1,5 +1,5 @@
 
-* {
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -19,7 +19,8 @@ input {
 
 .NewsletterLabel {
 
-    font-size: 20px;
+    font-size: 30px;
+    font-weight: 700;
     color: #eee;
     
 }

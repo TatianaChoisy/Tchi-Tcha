@@ -15,15 +15,15 @@ class Header extends Component {
                         <header>
                         <ul className="HeaderList">
 
-                            <img id="navLogo" src={Logo} alt="A logo" />
-                            <li className="HeaderLi"><Link to="/" className="HeaderLink">Home</Link></li>
-                            <li className="HeaderLi"><Link to="/Movies/" className="HeaderLink">Movies</Link></li>
-                            <li className="HeaderLi"><Link to="/InTheaters/" className="HeaderLink">In theaters</Link></li>
-                            <li className="HeaderLi"><Link to="/Premiere/" className="HeaderLink">Premiere</Link></li>
-                            <li className="HeaderLi"><Link to="/Category/" className="HeaderLink">Category</Link></li>
-                            <li className="HeaderLi"><Link to="/Seances/" className="HeaderLink">Seances</Link></li>
-                            <li className="HeaderLi"><Link to="/TchiTcha/" className="HeaderLink">Tchi Tcha</Link></li>
-                            <li className="HeaderLi"><Link to="/Contact/" className="HeaderLink">Contact</Link></li>
+                            <Link to="/" className="HeaderLink"><img id="navLogo" src={Logo} alt="The logo of the Tchi Tcha" /></Link>
+                            <li className="HeaderLi"><Link to="/" className="HeaderLink">HOME</Link></li>
+                            <li className="HeaderLi"><Link to="/Movies/" className="HeaderLink">MOVIES</Link></li>
+                            <li className="HeaderLi"><Link to="/InTheaters/" className="HeaderLink">IN THEATERS</Link></li>
+                            <li className="HeaderLi"><Link to="/Premiere/" className="HeaderLink">PREMIERE</Link></li>
+                            <li className="HeaderLi"><Link to="/Category/" className="HeaderLink">CATEGORY</Link></li>
+                            <li className="HeaderLi"><Link to="/Seances/" className="HeaderLink">SEANCES</Link></li>
+                            <li className="HeaderLi"><Link to="/TchiTcha/" className="HeaderLink">TCHI TCHA</Link></li>
+                            <li className="HeaderLi"><Link to="/Contact/" className="HeaderLink">CONTACT</Link></li>
                         
                         </ul>
                         </header>
