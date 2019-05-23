@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-
-
-//import ImgGallery from './components js/ImgGallery';
-import Navigation from './components js/Navigation/Navigation';
+//import SlickSlider from './components js/LandingPage/SliderHero';
+// import ImgGallery from './components js/ImgGallery';
+import LandingPage from './components js/LandingPage/LandingPage';
 
 
 class App extends Component {
@@ -24,8 +23,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
-        <Navigation/>
+      
+        <LandingPage />
+        
     
         
       </div>

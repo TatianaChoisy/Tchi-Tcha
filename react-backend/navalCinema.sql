@@ -170,6 +170,19 @@ INSERT INTO contacts
 VALUES (NULL, 'pseudo1', 'probleme avec un truc', "Salut j'ai un problème ca marche pas aidez moi svp"),
        (NULL, 'pseudo2', 'ça marche pas lol', 'pk sa marchent pa tn cite?');
 
+CREATE TABLE articles (
+    article_id INT PRIMARY KEY AUTO_INCREMENT,
+    article_img VARCHAR(200),
+    article_title VARCHAR(50),
+    article_text TEXT,
+    auteur VARCHAR(20),
+    article_date DATE
+)
+ENGINE=INNODB;
+
+INSERT INTO articles 
+VALUES (NULL, NULL, 'LE TITRE', 'LE TEXTE', 'TATOU', '2017-03-16');
+
 /* Foreign keys */
 
 ALTER TABLE films

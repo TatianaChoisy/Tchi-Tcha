@@ -1,0 +1,32 @@
+#slider {
+
+    grid-area: slider;
+    height: 300px;
+}
+
+#imageSlider {
+    margin: 0px;
+    padding: 0px;
+}
+
+.slick-slide div {
+    width: 100%;
+    height: auto;
+}
+
+.slick-slider {
+    margin: 0 auto;
+}
+
+.slick-dots {
+    bottom: 8px;
+}
+
+.slick-dots li button::before {
+    color: white;
+}
+
+.slick-dots li.slick-active button::before {
+    opacity: 0.75;
+    color: white;
+}

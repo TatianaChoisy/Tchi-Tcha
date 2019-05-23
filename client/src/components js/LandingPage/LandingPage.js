@@ -10,24 +10,24 @@ import Seances from '../Seances';
 import TchiTcha from '../TchiTcha';
 import Contact from '../Contact';
 import Footer from './Footer';
+import SlickSlider from './SliderHero';
 
-import'./Navigation.css';
+import'./LandingPage.css';
 
-class Navigation extends Component {
+
+class LandingPage extends Component {
     
 
     render() {
       return (
         
         
-          <div className="Navigation">
+          
           
           <Router>
 
             <Header/>
-            <Footer />
-            
-            
+            <SlickSlider></SlickSlider>
             <Route exact path="/" component={Home}/>
             <Route path="/Movies/" component={Movies} />
             <Route path="/InTheaters/" component={InTheaters} />
@@ -37,11 +37,11 @@ class Navigation extends Component {
             <Route path="/TchiTcha/" component={TchiTcha}/>
             <Route path="/Contact/" component={Contact} />
                
-          
+            <Footer/>
             
             
           </Router>
-        </div>
+        
         
             
           );
@@ -49,4 +49,4 @@ class Navigation extends Component {
 
 }
 
-export default Navigation;
+export default LandingPage;
