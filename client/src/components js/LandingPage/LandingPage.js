@@ -18,22 +18,45 @@ import'./LandingPage.css';
 
 
 class LandingPage extends Component {
-    
-  state = {
-    visible: false
+    constructor(props) {
+    super(props);
+    this.state = {
+        visible: false
+    }
+      this.displayMenuList = this.displayMenuList.bind(this);
+      this.displayBtnAdmin = this.displayBtnAdmin.bind(this);
 }
 
+displayMenuList() {
+    this.setState({ visible: true });
+
+  }
+
+  displayBtnAdmin() {
+    this.setState({ visible : false });
+
+}
+
+
+  
+
+
     render() {
-      return (
-        
-        
+      return ( 
+          
+        <Router>
+          
+          <div className="rowMenu">
+          <img src={Hamburger} id="MenuHamburger" alt="Menu hamburger" onClick={this.displayMenuList}/>
+          <h1 className="buttonMenu" onClick={this.displayMenuList} >MENU</h1>
+            <div className="Admin" style={{ display: this.state.displayBtnAdmin ? 'block' : 'none' }}><a></a></div>
+            </div>
+            {this.state.visible ? <Header /> : true}
+            
+            
+          <SlickSlider></SlickSlider>
           
           
-          <Router>
-          <button className="buttonMenu" onClick={() => { this.setState({ visible: true }); }} ><div id="text"></div>MENU</button>
-          {this.state.visible ? <Header /> : true}
-          <img src={Hamburger} id="MenuHamburger" alt="Menu hamburger"/>
-            <SlickSlider></SlickSlider>
             <Route exact path="/" component={Home}/>
             <Route path="/Movies/" component={Movies} />
             <Route path="/InTheaters/" component={InTheaters} />

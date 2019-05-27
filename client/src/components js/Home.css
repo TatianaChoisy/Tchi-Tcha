@@ -1,5 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .Home {
-    grid-area: home;
-    height: 800px;;
+    background: #eaeaea;
+    grid-area: component;
+    width: 100%;
+    height: 600px;
+
 
 }

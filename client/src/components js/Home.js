@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
 import './Home.css';
 
-class Home extends Component {
-    
+class Home extends React.Component {
+    constructor(props) {
+    super(props);
+    this.state = { articles: [] };
+  }
+
+  componentDidMount() {
+    fetch('/articles') 
+      .then(res => res.json())
+      .then(articles => this.setState({ articles }));
+    }
 
     render() {
       return (

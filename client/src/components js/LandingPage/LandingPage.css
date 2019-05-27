@@ -1,19 +1,26 @@
-.buttonMenu {
+.rowMenu {
+    display: flex;
 
+}
+
+
+.buttonMenu {
+margin-top: 20px;
+padding: 20px;
 cursor: pointer;
 white-space: nowrap;
-width: 200px;
-height: 70px;
 font-size: 25px;
 font-family: 'Montserrat', sans-serif;
 font-weight: 800;
 color: #ff899f;
-outline: 0px;
-border-style: none;
-box-sizing: border-box;
+width: 20px;
 
 }
 #MenuHamburger {
-    width: 30px;
-    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
 }

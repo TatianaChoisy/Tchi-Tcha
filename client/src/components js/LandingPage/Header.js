@@ -12,8 +12,11 @@ class Header extends Component {
         
             <div className="Header">
           
-                        <header>
-                        <ul className="HeaderList">
+                <header>
+                    
+                    
+                    <ul className="HeaderList">
+                        
 
                             <Link to="/" className="HeaderLink"><img id="navLogo" src={Logo} alt="The logo of the Tchi Tcha" /></Link>
                             <li className="HeaderLi"><Link to="/" className="HeaderLink">HOME</Link></li>
