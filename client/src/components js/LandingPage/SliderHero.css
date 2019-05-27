@@ -2,7 +2,7 @@
 
 #slider {
     grid-area: slider;
-    height: 100px;
+    height: 100%;
 }
 
 #imageSlider {

@@ -4,7 +4,7 @@ import "../../../node_modules/slick-carousel/slick/slick.css";
 import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 import './SliderHero.css';
 
-class SlickSlider extends React.Component {
+class SlickSlider extends Component {
     constructor(props) {
         super(props);
         this.state = { films: [] };
@@ -14,6 +14,8 @@ class SlickSlider extends React.Component {
         fetch('/films')
             .then(res => res.json())
             .then(films => this.setState({ films }));
+        
+    
     }
 
     render() {

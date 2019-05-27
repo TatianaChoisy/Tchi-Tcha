@@ -6,7 +6,7 @@ exports.display_All_Articles = function (req, res) {
 
     // Use a method defined in the Model
     
-    Articles.getAllArticles(function (err, date) {
+    Articles.getAllArticles(function (err, data) {
         if (err) {
             res.send(err);
         }
